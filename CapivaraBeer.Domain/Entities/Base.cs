@@ -5,6 +5,6 @@ namespace CapivaraBeer.Domain.Entities
     public class Base
     {
         [Key]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
     }
 }

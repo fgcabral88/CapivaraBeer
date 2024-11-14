@@ -19,12 +19,12 @@ namespace CapivaraBeer.Domain.Entities
         public Cursos(string nomeCurso, string descricaoCurso, decimal precoCurso, DateTime dataInicioCurso, DateTime dataFimCurso,
             string imagemCurso, StatusCursoEnum statusCurso)
         {
-            NomeCurso = nomeCurso;
-            DescricaoCurso = descricaoCurso;
+            NomeCurso = nomeCurso.ToLower();
+            DescricaoCurso = descricaoCurso.ToLower();
             PrecoCurso = precoCurso;
             DataInicioCurso = dataInicioCurso;
             DataFimCurso = dataFimCurso;
-            ImagemCurso = imagemCurso;
+            ImagemCurso = imagemCurso.ToLower();
             StatusCurso = statusCurso;
         }
     }

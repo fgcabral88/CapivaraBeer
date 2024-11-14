@@ -19,7 +19,7 @@ namespace CapivaraBeer.infrastructure.Repositories
 
         public async Task<IEnumerable<CursosListarDto>> RetornarCursosRepositorioAsync()
         {
-            var query = "SELECT * FROM Usuarios";
+            var query = "SELECT * FROM Cursos";
 
             return await _dbConnection.QueryAsync<CursosListarDto>(query);
         }

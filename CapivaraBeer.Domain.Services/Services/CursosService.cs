@@ -1,9 +1,11 @@
 ﻿using AutoMapper;
 using CapivaraBeer.Domain.Interfaces.Repositories;
 using CapivaraBeer.Domain.Interfaces.Services;
-using Castle.Core.Configuration;
 using CapivaraBeer.Application.Dtos.Cursos;
 using CapivaraBeer.Shared.Constants;
+using CapivaraBeer.Domain.Enums;
+using CapivaraBeer.Shared.Utils;
+using Microsoft.Extensions.Configuration;
 
 namespace CapivaraBeer.Domain.Services
 {
@@ -23,23 +25,14 @@ namespace CapivaraBeer.Domain.Services
 
         public async Task<ResponseMessages<List<CursosListarDto>>> RetornarCursosAsync()
         {
-            ResponseMessages<List<CursosListarDto>> response = new ResponseMessages<List<CursosListarDto>>();
-
-            var cursosDB = await _cursosRepository.RetornarCursosRepositorioAsync(); 
+            var cursosDB = await _cursosRepository.RetornarCursosRepositorioAsync();
 
             if (!cursosDB.Any())
-            {
-                //response.Mensagem = "Nenhum usuário encontrado. Tente novamente!";
-                //response.Status = false;
-                return response;
-            }
+                return new ResponseMessages<List<CursosListarDto>>(new List<CursosListarDto>(), ResponseStatusEnum.NotFound.GetDescription(), false);
 
             var cursosMap = _mapper.Map<List<CursosListarDto>>(cursosDB);
-            //response.Dados = usuariosMap;
-            //response.Mensagem = "Usuários retornados com sucesso";
-            //response.Status = true;
 
-            return response;
+            return new ResponseMessages<List<CursosListarDto>>(cursosMap, ResponseStatusEnum.OperationSucceeded.GetDescription(), true);
         }
 
         public Task<ResponseMessages<CursosListarDto>> RetornarCursosIdAsync(Guid Id)
