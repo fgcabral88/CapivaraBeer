@@ -9,9 +9,7 @@
   <ItemGroup>
     <Folder Include="Configuration\" />
     <Folder Include="Data\" />
-    <Folder Include="Mappings\" />
     <Folder Include="Cache\" />
-    <Folder Include="Repositories\" />
   </ItemGroup>
 
 </Project>
