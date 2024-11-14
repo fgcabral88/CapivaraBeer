@@ -24,7 +24,7 @@ namespace CapivaraBeer.infrastructure.Repositories
             return await _dbConnection.QueryAsync<CursosListarDto>(query);
         }
 
-        public Task<CursosListarDto> RetornarCursosIdRepositorioAsync(Guid id)
+        public Task<CursosListarDto> RetornarCursosIdRepositorioAsync(int id)
         {
             throw new NotImplementedException();
         }
@@ -39,7 +39,7 @@ namespace CapivaraBeer.infrastructure.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<ResponseMessages<bool>> RemoverCursosRepositorioAsync(Guid id)
+        public Task<ResponseMessages<bool>> RemoverCursosRepositorioAsync(int id)
         {
             throw new NotImplementedException();
         }

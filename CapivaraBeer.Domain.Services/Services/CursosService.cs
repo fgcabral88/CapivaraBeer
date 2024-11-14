@@ -35,7 +35,7 @@ namespace CapivaraBeer.Domain.Services
             return new ResponseMessages<List<CursosListarDto>>(cursosMap, ResponseStatusEnum.OperationSucceeded.GetDescription(), true);
         }
 
-        public Task<ResponseMessages<CursosListarDto>> RetornarCursosIdAsync(Guid Id)
+        public Task<ResponseMessages<CursosListarDto>> RetornarCursosIdAsync(int Id)
         {
             throw new NotImplementedException();
         }
@@ -45,7 +45,7 @@ namespace CapivaraBeer.Domain.Services
             throw new NotImplementedException();
         }
 
-        public Task<ResponseMessages<List<CursosListarDto>>> DeletarCursosAsync(Guid Id)
+        public Task<ResponseMessages<List<CursosListarDto>>> DeletarCursosAsync(int Id)
         {
             throw new NotImplementedException();
         }
