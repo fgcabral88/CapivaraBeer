@@ -1,4 +1,6 @@
-﻿namespace CapivaraBeer.Domain.Entities
+﻿using CapivaraBeer.Domain.Enums;
+
+namespace CapivaraBeer.Domain.Entities
 {
     public class Produtos : Base
     {
@@ -16,6 +18,30 @@
         public required DateTime DataCadastroProduto { get; set; }
         public required DateTime DataAlteracaoProduto { get; set; }
         public required DateTime DataExclusaoProduto { get; set; }
-        public required bool SituacaoProduto { get; set; }
+        public required StatusProdutoEnum StatusProduto { get; set; }
+
+        public Produtos(){}
+
+        public Produtos(string nomeProduto, string tipoProduto, string descricaoProduto, decimal precoProduto, 
+            int quantidadeProduto, decimal teorAlcoolProduto, string aromaProduto, string saborProduto, 
+            string imagemProduto, DateTime dataProducaoProduto, DateTime dataValidadeProduto, 
+            DateTime dataCadastroProduto, DateTime dataAlteracaoProduto, DateTime dataExclusaoProduto, StatusProdutoEnum statusProduto)
+        {
+            NomeProduto = nomeProduto;
+            TipoProduto = tipoProduto;
+            DescricaoProduto = descricaoProduto;
+            PrecoProduto = precoProduto;
+            QuantidadeProduto = quantidadeProduto;
+            TeorAlcoolProduto = teorAlcoolProduto;
+            AromaProduto = aromaProduto;
+            SaborProduto = saborProduto;
+            ImagemProduto = imagemProduto;
+            DataProducaoProduto = dataProducaoProduto;
+            DataValidadeProduto = dataValidadeProduto;
+            DataCadastroProduto = dataCadastroProduto;
+            DataAlteracaoProduto = dataAlteracaoProduto;
+            DataExclusaoProduto = dataExclusaoProduto;
+            StatusProduto = statusProduto;
+        }
     }
 }
