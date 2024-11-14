@@ -10,4 +10,9 @@
     <Folder Include="Events\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Castle.Core" Version="5.1.1" />
+  </ItemGroup>
+
 </Project>
