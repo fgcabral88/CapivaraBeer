@@ -1,0 +1,6 @@
+@CapivaraBeer_HostAddress = http://localhost:5190
+
+GET {{CapivaraBeer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

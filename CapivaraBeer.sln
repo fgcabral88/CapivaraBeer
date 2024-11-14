@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapivaraBeer", "CapivaraBeer\CapivaraBeer.csproj", "{0A4278D4-A104-4ED1-8214-E4516F5B9927}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B3D6296F-7D72-4B05-9D1E-8ACACBC8F0E1} = {B3D6296F-7D72-4B05-9D1E-8ACACBC8F0E1}
+		{B526260A-F7C0-4B33-BB94-738086528F37} = {B526260A-F7C0-4B33-BB94-738086528F37}
+		{DDAEDC0A-E227-474A-9C68-69382AC80529} = {DDAEDC0A-E227-474A-9C68-69382AC80529}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{92A8FF96-7C6F-4F47-B76F-CDAA10D56596}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{A2D7B7B8-49CD-4E33-B788-69A9496F807B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7D3BC085-121E-470F-BA9A-06386030E3BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastructure", "{70214F6D-67E8-4E66-981A-1A45D00B78C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapivaraBeer.Application", "CapivaraBeer.Application\CapivaraBeer.Application.csproj", "{DDAEDC0A-E227-474A-9C68-69382AC80529}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapivaraBeer.Domain", "CapivaraBeer.Domain\CapivaraBeer.Domain.csproj", "{B3D6296F-7D72-4B05-9D1E-8ACACBC8F0E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapivaraBeer.infrastructure", "CapivaraBeer.infrastructure\CapivaraBeer.infrastructure.csproj", "{B526260A-F7C0-4B33-BB94-738086528F37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapivaraBeer.Tests", "CapivaraBeer.Tests\CapivaraBeer.Tests.csproj", "{63691C46-5904-4113-A738-3531BDFBBC8A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0A4278D4-A104-4ED1-8214-E4516F5B9927} = {0A4278D4-A104-4ED1-8214-E4516F5B9927}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apis", "Apis", "{4634A14C-EA48-4512-9735-02F221C2BA98}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{3D138FB9-B8D7-40DC-9FE6-C782F8110617}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapivaraBeer.Shared", "CapivaraBeer.Shared\CapivaraBeer.Shared.csproj", "{7068E13A-90D2-4268-AA4E-ACE79592FAAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A4278D4-A104-4ED1-8214-E4516F5B9927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A4278D4-A104-4ED1-8214-E4516F5B9927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A4278D4-A104-4ED1-8214-E4516F5B9927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A4278D4-A104-4ED1-8214-E4516F5B9927}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDAEDC0A-E227-474A-9C68-69382AC80529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDAEDC0A-E227-474A-9C68-69382AC80529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDAEDC0A-E227-474A-9C68-69382AC80529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDAEDC0A-E227-474A-9C68-69382AC80529}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3D6296F-7D72-4B05-9D1E-8ACACBC8F0E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3D6296F-7D72-4B05-9D1E-8ACACBC8F0E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3D6296F-7D72-4B05-9D1E-8ACACBC8F0E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3D6296F-7D72-4B05-9D1E-8ACACBC8F0E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B526260A-F7C0-4B33-BB94-738086528F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B526260A-F7C0-4B33-BB94-738086528F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B526260A-F7C0-4B33-BB94-738086528F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B526260A-F7C0-4B33-BB94-738086528F37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63691C46-5904-4113-A738-3531BDFBBC8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63691C46-5904-4113-A738-3531BDFBBC8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63691C46-5904-4113-A738-3531BDFBBC8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63691C46-5904-4113-A738-3531BDFBBC8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7068E13A-90D2-4268-AA4E-ACE79592FAAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7068E13A-90D2-4268-AA4E-ACE79592FAAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7068E13A-90D2-4268-AA4E-ACE79592FAAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7068E13A-90D2-4268-AA4E-ACE79592FAAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0A4278D4-A104-4ED1-8214-E4516F5B9927} = {4634A14C-EA48-4512-9735-02F221C2BA98}
+		{DDAEDC0A-E227-474A-9C68-69382AC80529} = {92A8FF96-7C6F-4F47-B76F-CDAA10D56596}
+		{B3D6296F-7D72-4B05-9D1E-8ACACBC8F0E1} = {A2D7B7B8-49CD-4E33-B788-69A9496F807B}
+		{B526260A-F7C0-4B33-BB94-738086528F37} = {70214F6D-67E8-4E66-981A-1A45D00B78C7}
+		{63691C46-5904-4113-A738-3531BDFBBC8A} = {7D3BC085-121E-470F-BA9A-06386030E3BF}
+		{7068E13A-90D2-4268-AA4E-ACE79592FAAC} = {3D138FB9-B8D7-40DC-9FE6-C782F8110617}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {15D97110-AF14-469F-8F59-59189096E0B7}
+	EndGlobalSection
+EndGlobal
