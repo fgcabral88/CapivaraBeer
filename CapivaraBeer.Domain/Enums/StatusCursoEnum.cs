@@ -4,19 +4,19 @@ namespace CapivaraBeer.Domain.Enums
 {
     public enum StatusCursoEnum
     {
-        [Description("Ativo")]
-        Ativo,
-
         [Description("Inativo")]
-        Inativo,
+        Inativo = 0,
+
+        [Description("Ativo")]
+        Ativo = 1,
 
         [Description("Finalizado")]
-        Finalizado,
+        Finalizado = 2,
 
         [Description("Cancelado")]
-        Cancelado,
+        Cancelado = 3,
 
         [Description("Suspenso")]
-        Suspenso
+        Suspenso = 4
     }
 }

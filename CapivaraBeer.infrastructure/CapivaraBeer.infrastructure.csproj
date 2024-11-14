@@ -9,9 +9,16 @@
   <ItemGroup>
     <Folder Include="Configuration\" />
     <Folder Include="Data\" />
-    <Folder Include="Mappings\" />
     <Folder Include="Cache\" />
-    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.35" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CapivaraBeer.Domain.Core\CapivaraBeer.Domain.Core.csproj" />
+    <ProjectReference Include="..\CapivaraBeer.Shared\CapivaraBeer.Shared.csproj" />
   </ItemGroup>
 
 </Project>

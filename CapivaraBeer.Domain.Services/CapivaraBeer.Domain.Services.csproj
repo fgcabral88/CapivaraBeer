@@ -7,12 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Events\" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="13.0.1" />
-    <PackageReference Include="Castle.Core" Version="5.1.1" />
+    <ProjectReference Include="..\CapivaraBeer.Domain.Core\CapivaraBeer.Domain.Core.csproj" />
+    <ProjectReference Include="..\CapivaraBeer.Shared\CapivaraBeer.Shared.csproj" />
   </ItemGroup>
 
 </Project>
